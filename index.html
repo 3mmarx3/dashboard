@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -8,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/dashboard/css/main.css">
     <link rel="stylesheet" type="text/css" href="/dashboard/css/utilities.css"><!-- Google Tag Manager -->
     <link rel="stylesheet" href="/dashboard/style/style.css">
+    <link rel="stylesheet" href="/dashboard/style/main.css">
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
@@ -18,7 +18,6 @@
         })(window, document, 'script', 'dataLayer', 'GTM-MF4DZVH');</script>
     <!-- End Google Tag Manager -->
 </head>
-
 <body>
     <div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
         <nav class="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg"
@@ -26,7 +25,7 @@
             <div class="container-fluid"><button class="navbar-toggler ms-n2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false"
                     aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <a
-                    class="navbar-brand py-lg-2 mb-lg-5 px-lg-6 me-0" href="/"><img src="/img/logos/clever-primary.svg"
+                    class="navbar-brand py-lg-2 mb-lg-5 px-lg-6 me-0" href="/"><img src="/dashboard/img/logos/clever-primary.svg"
                         alt="..."></a>
                 <div class="navbar-user d-lg-none">
                     <div class="dropdown"><a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown"
@@ -45,24 +44,37 @@
                 </div>
                 <div class="collapse navbar-collapse" id="sidebarCollapse">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-bar-chart-fill"></i>
+                        <li class="nav-item"><a class='nav-link' href='#' onclick="showDiv('div1')"><i class="bi bi-bar-chart-fill"></i>
                                 Dashboard</a></li>
-                        <li class="nav-item"><a class='nav-link' href='/profile'><i class="bi bi-person-circle"></i>
+                        <li class="nav-item"><a onclick="showDiv('div2')"  class='nav-link' href='#' ><i class="bi bi-person-circle"></i>
                                 Profile</a></li>
-                        <li class="nav-item"><a class='nav-link' href='/settings'><i class="bi bi-gear-fill"></i>
+                        <li class="nav-item"><a onclick="showDiv('div3')" class='nav-link' href='#'><i class="bi bi-gear-fill"></i>
                                 Settings</a></li>
-                        <li class="nav-item"><a class='nav-link' href='/login'><i class="bi bi-lock-fill"></i> Login</a>
-                        </li>
+
+
+                                <li class="nav-item"><a onclick="showDiv('div4')" class='nav-link' href='#'><i class="bi bi-gear-fill"></i>
+                                    order</a></li>
+
+
+
+                                    <li class="nav-item"><a onclick="showDiv('div5')" class='nav-link' href='#'><i class="bi bi-gear-fill"></i>
+                                        Ads</a></li>
+
+
+                                        <li class="nav-item"><a onclick="showDiv('div6')" class='nav-link' href='#'><i class="bi bi-gear-fill"></i>
+                                            Add Product</a></li>
+                        <li class="nav-item"><a class='nav-link' href='#'><i class="bi bi-lock-fill"></i> Login</a></li>
+
+
+
+
                     </ul>
                     <hr class="navbar-divider my-5 opacity-70">
                     <ul class="navbar-nav">
                         <li><span
                                 class="nav-link text-xs font-semibold text-uppercase text-muted ls-wide">Resources</span>
                         </li>
-                        <button onclick="showDiv('div1')">Button 1</button>
-                        <button onclick="showDiv('div2')">Button 2</button>
-                        <button onclick="showDiv('div3')">Button 3</button>
-
+                      
                         <li class="nav-item"><a class="nav-link" href="https://bit.ly/3uCYY2X"><i
                                     class="bi bi-hand-index"></i> Hot it works</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://webpixels.io/docs"><i
@@ -195,7 +207,7 @@
                                             <div class="me-3 text-white">
                                                 <div class="position-relative d-inline-block text-current">
                                                     <div class="avatar rounded-circle"><img alt="..."
-                                                            src="/img/people/img-1.jpg"></div><span
+                                                            src="/dashboard/img/people/img-1.jpg"></div><span
                                                         class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
                                                 </div>
                                             </div>
@@ -213,7 +225,7 @@
                                             <div class="me-3 text-white">
                                                 <div class="position-relative d-inline-block text-current">
                                                     <div class="avatar rounded-circle"><img alt="..."
-                                                            src="/img/people/img-2.jpg"></div><span
+                                                            src="/dashboard/img/people/img-2.jpg"></div><span
                                                         class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
                                                 </div>
                                             </div>
@@ -231,7 +243,7 @@
                                             <div class="me-3 text-white">
                                                 <div class="position-relative d-inline-block text-current">
                                                     <div class="avatar rounded-circle"><img alt="..."
-                                                            src="/img/people/img-3.jpg"></div><span
+                                                            src="/dashboard/img/people/img-3.jpg"></div><span
                                                         class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
                                                 </div>
                                             </div>
@@ -250,7 +262,7 @@
                                                 <div class="position-relative d-inline-block text-current">
 
                                                     <div class="avatar rounded-circle"><img alt="..."
-                                                            src="/img/people/img-4.jpg"></div><span
+                                                            src="/dashboard/img/people/img-4.jpg"></div><span
                                                         class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
                                                 </div>
                                             </div>
@@ -312,11 +324,11 @@
                                             <div class="ms-auto">
                                                 <div class="avatar-group"><a href="#"
                                                         class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card"><img
-                                                            alt="..." src="/img/people/img-1.jpg"> </a><a href="#"
+                                                            alt="..." src="/dashboard/img/people/img-1.jpg"> </a><a href="#"
                                                         class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card"><img
-                                                            alt="..." src="/img/people/img-3.jpg"> </a><a href="#"
+                                                            alt="..." src="/dashboard/img/people/img-3.jpg"> </a><a href="#"
                                                         class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card"><img
-                                                            alt="..." src="/img/people/img-4.jpg"></a></div>
+                                                            alt="..." src="/dashboard/img/people/img-4.jpg"></a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -351,11 +363,11 @@
                                             <div class="ms-auto">
                                                 <div class="avatar-group"><a href="#"
                                                         class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card"><img
-                                                            alt="..." src="/img/people/img-1.jpg"> </a><a href="#"
+                                                            alt="..." src="/dashboard/img/people/img-1.jpg"> </a><a href="#"
                                                         class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card"><img
-                                                            alt="..." src="/img/people/img-3.jpg"> </a><a href="#"
+                                                            alt="..." src="/dashboard/img/people/img-3.jpg"> </a><a href="#"
                                                         class="avatar avatar-xs rounded-circle text-white border border-1 border-solid border-card"><img
-                                                            alt="..." src="/img/people/img-4.jpg"></a></div>
+                                                            alt="..." src="/dashboard/img/people/img-4.jpg"></a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -381,7 +393,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/airbnb.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/airbnb.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">Website Redesign</a></td>
                                         <td>23-01-2022</td>
@@ -405,7 +417,7 @@
                                                     class="bi bi-trash"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/amazon.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/amazon.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">E-commerce App</a></td>
                                         <td>23-01-2022</td>
@@ -429,7 +441,7 @@
                                                     class="bi bi-trash"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/bootstrap.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/bootstrap.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">Learning Platform</a></td>
                                         <td>23-01-2022</td>
@@ -453,7 +465,7 @@
                                                     class="bi bi-trash"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/dribbble.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/dribbble.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">Design Portfolio</a></td>
                                         <td>23-01-2022</td>
@@ -477,7 +489,7 @@
                                                     class="bi bi-trash"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/spotify.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/spotify.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">Our team&#39;s playlist</a>
                                         </td>
@@ -502,7 +514,7 @@
                                                     class="bi bi-trash"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/uber.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/uber.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">Uber native app</a></td>
                                         <td>23-01-2022</td>
@@ -526,7 +538,7 @@
                                                     class="bi bi-trash"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/codepen.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/codepen.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">Code Examples for Devs</a>
                                         </td>
@@ -551,7 +563,7 @@
                                                     class="bi bi-trash"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img alt="..." src="/img/social/slack.svg"
+                                        <td><img alt="..." src="/dashboard/img/social/slack.svg"
                                                 class="avatar avatar-sm rounded-circle me-2"> <a
                                                 class="text-heading font-semibold" href="#">Community Channel</a></td>
                                         <td>23-01-2022</td>
@@ -588,13 +600,13 @@
                 <div class="vstack gap-6">
                     <div class="rounded shadow-sm bg-card">
                         <div class="h-64 rounded-top overflow-hidden bg-cover"
-                            style="background-image:url(/img/covers/img-profile.jpg);background-position:center center">
+                            style="background-image:url(/dashboard/img/covers/img-profile.jpg);background-position:center center">
                         </div>
                         <div class="px-6 pb-6">
                             <div class="row g-0 align-items-end">
                                 <div class="col-auto">
                                     <div class="avatar avatar-2xl border border-body border-4 mt-n10"><img alt="..."
-                                            src="/img/people/img-profile.jpg" class="rounded"></div>
+                                            src="/dashboard/img/people/img-profile.jpg" class="rounded"></div>
                                 </div>
                                 <div class="col ps-4 pt-4">
                                     <h6 class="text-xs text-uppercase text-muted mb-1">Overview</h6>
@@ -627,97 +639,57 @@
                                 exactly why they should hire you. Of course, you’ll need to know how to write an
                                 effective statement first, but we’ll get on to that in a bit.</p><a href="#"
                                 class="link-primary font-semibold text-sm">Read more</a>
+
+                                <div>
+                                    <div class="mb-5">
+                                        <h4>Contact Information</h4>
+                                    </div>
+                                    <form>
+                                        <div class="row g-5">
+                                            <div class="col-md-6">
+                                                <div><label class="form-label">First name</label> <input type="text" class="form-control" id="first_name"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div><label class="form-label">Last name</label> <input type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div><label class="form-label" for="email">Email</label> <input type="email" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div><label class="form-label">Phone number</label> <input type="tel" class="form-control"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div><label class="form-label">Address</label> <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div><label class="form-label">City</label> <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div><label class="form-label">Country</label> <select class="form-select" aria-label="Default select example">
+                                                        <option selected="selected">Country</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div><label class="form-label" for="zip">ZIP</label> <input type="tel" class="form-control" id="zip"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" name="check-primary-address" id="check-primary-address"> <label class="form-check-label" for="check-primary-address">Make this my default
+                                                        address</label></div>
+                                            </div>
+                                            <div class="col-12 text-end"><button type="button" class="btn btn-sm btn-neutral me-2">Cancel</button> <button type="submit" class="btn btn-sm btn-primary">Save</button></div>
+                                        </div>
+                                    </form>
+                                </div>
+
                         </div>
+                        
                     </div>
-                    <div>
-                        <h5 class="mb-4">My Files</h5>
-                        <div class="row g-5">
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card shadow-4-hover">
-                                    <div class="p-2"><a href="#" class="d-block"><img class="img-fluid rounded-2" alt="..."
-                                                src="/img/media/img-800x800-1.jpg"></a></div>
-                                    <div class="px-4 pt-2 pb-4">
-                                        <h6 class="font-semibold mb-2">Website Redesign</h6>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-xs text-muted"><i class="bi bi-lock me-1"></i>Private
-                                            </div>
-                                            <div class="text-xs text-muted ms-auto">3 hrs ago</div>
-                                        </div><span class="d-block"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card shadow-4-hover">
-                                    <div class="p-2"><a href="#" class="d-block"><img class="img-fluid rounded-2" alt="..."
-                                                src="/img/media/img-800x800-2.jpg"></a></div>
-                                    <div class="px-4 pt-2 pb-4">
-                                        <h6 class="font-semibold mb-2">Website Redesign</h6>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-xs text-muted"><i class="bi bi-lock me-1"></i>Private
-                                            </div>
-                                            <div class="text-xs text-muted ms-auto">3 hrs ago</div>
-                                        </div><span class="d-block"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card shadow-4-hover">
-                                    <div class="p-2"><a href="#" class="d-block"><img class="img-fluid rounded-2" alt="..."
-                                                src="/img/media/img-800x800-3.jpg"></a></div>
-                                    <div class="px-4 pt-2 pb-4">
-                                        <h6 class="font-semibold mb-2">Website Redesign</h6>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-xs text-muted"><i class="bi bi-lock me-1"></i>Private
-                                            </div>
-                                            <div class="text-xs text-muted ms-auto">3 hrs ago</div>
-                                        </div><span class="d-block"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card shadow-4-hover">
-                                    <div class="p-2"><a href="#" class="d-block"><img class="img-fluid rounded-2" alt="..."
-                                                src="/img/media/img-800x800-4.jpg"></a></div>
-                                    <div class="px-4 pt-2 pb-4">
-                                        <h6 class="font-semibold mb-2">Website Redesign</h6>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-xs text-muted"><i class="bi bi-lock me-1"></i>Private
-                                            </div>
-                                            <div class="text-xs text-muted ms-auto">3 hrs ago</div>
-                                        </div><span class="d-block"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card shadow-4-hover">
-                                    <div class="p-2"><a href="#" class="d-block"><img class="img-fluid rounded-2" alt="..."
-                                                src="/img/media/img-800x800-5.jpg"></a></div>
-                                    <div class="px-4 pt-2 pb-4">
-                                        <h6 class="font-semibold mb-2">Website Redesign</h6>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-xs text-muted"><i class="bi bi-lock me-1"></i>Private
-                                            </div>
-                                            <div class="text-xs text-muted ms-auto">3 hrs ago</div>
-                                        </div><span class="d-block"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card shadow-4-hover">
-                                    <div class="p-2"><a href="#" class="d-block"><img class="img-fluid rounded-2" alt="..."
-                                                src="/img/media/img-800x800-6.jpg"></a></div>
-                                    <div class="px-4 pt-2 pb-4">
-                                        <h6 class="font-semibold mb-2">Website Redesign</h6>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-xs text-muted"><i class="bi bi-lock me-1"></i>Private
-                                            </div>
-                                            <div class="text-xs text-muted ms-auto">3 hrs ago</div>
-                                        </div><span class="d-block"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+             
                 </div>
             </div>
         </div>
@@ -727,14 +699,14 @@
 
         <div class="scting  content" id="div3">
             <main class="py-6 bg-surface-secondary">
-                <div class="container-fluid max-w-screen-md vstack gap-6">
+                <div class="container-fluid  vstack gap-6">
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div>
                                     <div class="d-flex align-items-center"><a href="#"
                                             class="avatar avatar-lg bg-warning rounded-circle text-white"><img alt="..."
-                                                src="/img/people/img-profile.jpg"></a>
+                                                src="/dashboard/img/people/img-profile.jpg"></a>
                                         <div class="ms-4"><span class="h4 d-block mb-0">Tahlia Mooney</span> <a href="#"
                                                 class="text-sm font-semibold text-muted">View Profile</a></div>
                                     </div>
@@ -805,7 +777,616 @@
     
 
 
+        <div class="scting  content" id="div4">
+            <div class="card">
+                <div class="card-header border-bottom">
+                    <h5 class="mb-0">Latest projects</h5>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover table-nowrap">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Due Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Team</th>
+                                <th scope="col">Completion</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/airbnb.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">Website Redesign</a></td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-warning"></i>In
+                                        progress</span></td>
 
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">38%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width:38%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="#" class="btn btn-sm btn-neutral">View</a> 
+                                    <a href="/dashboard/pags/Profile.html"><button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></a>
+                                    <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/amazon.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">E-commerce App</a></td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-success"></i>Done</span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">83%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width:83%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="#" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/bootstrap.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">Learning Platform</a></td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-danger"></i>Project at
+                                        risk</span></td>
+
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">4%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width:4%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="#" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/dribbble.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">Design Portfolio</a></td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-warning"></i>In
+                                        progress</span></td>
+
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">10%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="#" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/spotify.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">Our team's playlist</a>
+                                </td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-warning"></i>In
+                                        progress</span></td>
+
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">83%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width:83%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/uber.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">Uber native app</a></td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-secondary"></i>Not
+                                        started</span></td>
+
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">4%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width:4%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/codepen.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">Code Examples for Devs</a>
+                                </td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-danger"></i>Project at
+                                        risk</span></td>
+
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">38%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width:38%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="..." src="/dashboard/img/social/slack.svg" class="avatar avatar-sm rounded-circle me-2"> <a class="text-heading font-semibold" href="#">Community Channel</a></td>
+                                <td>23-01-2022</td>
+                                <td><span class="badge badge-lg badge-dot"><i class="bg-danger"></i>Project at
+                                        risk</span></td>
+
+                                <td>
+                                    <div class="d-flex align-items-center"><span class="me-2">74%</span>
+                                        <div>
+                                            <div class="progress" style="width:100px">
+                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width:74%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+
+
+
+            <div class="scting  content" id="div5">
+                
+                
+                
+    <div class="main">
+        <div class="titel">
+            <h2>titel</h2>
+            <div class="main_div">
+
+                <div class="contener">
+                
+                    <div class="img">
+
+                        <div class="block_div">
+                            <span>0</span> <input type="url" placeholder="-----------------------------">
+                          <input type="submit">
+                           </div>
+                    </div>
+
+                 
+                    <div class="img">
+
+                        <div class="block_div">
+                            <span>0</span> <input type="url" placeholder="-----------------------------">
+                          <input type="submit">
+                           </div>
+                    </div>
+
+                </div>
+
+
+                <div class="img_slide ">
+
+
+                            
+                  
+
+                       <div class="flex_block">
+                        <div class="block_div">
+                            <span>0</span> <input type="url" placeholder="-----------------------------">
+                          <input type="submit">
+                     
+                           </div>
+                        <div class="del_slide">33</div>
+                       </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<div class="scting  content" id="div6">
+
+        <style>
+   
+   input#pric {
+    width: 100%;
+}
+
+        .block_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    background: burlywood;
+    border-radius: 100px;
+    padding: 10px;
+    gap: 10px;
+}
+            .container h1 {
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #333;
+            }
+            .form-group {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 15px;
+            }
+            .form-group label {
+                flex: 1 1 100%;
+        margin-bottom: 5px;
+        font-size: smaller;
+            }
+            .form-group input, .form-group select, .form-group textarea {
+                flex: 1 1 48%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 4px;
+            }
+            .form-group input[type="checkbox"] {
+                flex: 0 0 auto;
+                width: auto;
+                margin-right: 10px;
+            }
+            .form-group .half-width {
+                flex: 1 1 48%;
+            }
+            .form-group .full-width {
+                flex: 1 1 100%;
+            }
+            .form-actions {
+                display: flex;
+        gap: 10px;
+        margin: 5vh 0;
+            }
+            .form-actions button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            .form-actions .btn-add {
+                background-color: #28a745;
+                color: #fff;
+            }
+            .form-actions .btn-close {
+                background-color: #dc3545;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" style="padding: 20px;">
+            <h1>Add New Product</h1>
+            <form>
+                <div class="form">
+                <div class="form-group">
+                    <label for="sku">Product name</label>
+                    <input type="text" id="sku" name="sku" placeholder="SKU" class="half-width">
+                    <label for="barcode-type">Barcode Type</label>
+                    <input type="text" id="barcode-type" name="barcode-type" class="half-width" placeholder="description">
+                </div>
+                <div class="form-group">
+                    <label for="pric">pric</label>
+                    <input type="text" id="pric" name="pric" placeholder="pric" class="half-width">
+                    <label for="barcode-type">discount by %</label>
+                    <input type="text"  id="discount" name="discount" class="half-width">
+                 
+                </div>
+                <div class="form-group">
+                    <label for="unit">Unit</label>
+                    <select id="unit" name="unit" class="half-width">
+                        <option value="">Select Unit</option>
+                    </select>
+                    <label for="brand">Brand</label>
+                    <select id="brand" name="brand" class="half-width">
+                        <option value="">Select Brand</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" class="half-width">
+                        <option value="">Select Category</option>
+                    </select>
+                    <label for="sub-category">Sub Category</label>
+                    <select id="sub-category" name="sub-category" class="half-width">
+                        <option value="">Select Sub Categories</option>
+                    </select>
+                </div>
+            </div>
+    
+    <!--  -->
+    
+    
+    <!--  -->
+    
+    
+    <!--  -->
+    
+                <div class="form">
+    
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" class="half-width">
+                        <option value="">Select Category</option>
+                    </select>
+                    <label for="sub-category">Sub Category</label>
+                    <select id="sub-category" name="sub-category" class="half-width">
+                        <option value="">Select Sub Categories</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" class="half-width">
+                        <option value="">Select Category</option>
+                    </select>
+                    <label for="sub-category">Sub Category</label>
+                    <select id="sub-category" name="sub-category" class="half-width">
+                        <option value="">Select Sub Categories</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" class="half-width">
+                        <option value="">Select Category</option>
+                    </select>
+                    <label for="sub-category">Sub Category</label>
+                    <select id="sub-category" name="sub-category" class="half-width">
+                        <option value="">Select Sub Categories</option>
+                    </select>
+                </div>
+    
+    
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" class="half-width">
+                        <option value="">Select Category</option>
+                    </select>
+                    <label for="sub-category">Sub Category</label>
+                    <select id="sub-category" name="sub-category" class="half-width">
+                        <option value="">Select Sub Categories</option>
+                    </select>
+                </div>
+    
+            </div>
+    
+    
+    
+    
+    
+    
+            <div class="form">
+                <div class="form-group">
+                    <label for="pric">pric</label>
+                    <input type="file" id="pric" name="pric" placeholder="pric" class="half-width">
+          
+                 
+                </div>
+                <div class="form-group">
+                    <label for="pric">pric</label>
+                    <input type="file" id="pric" name="pric" placeholder="pric" class="half-width">
+          
+                 
+                </div>
+             
+                <div class="form-group">
+                    <label for="pric">pric</label>
+                    <input type="file" id="pric" name="pric" placeholder="pric" class="half-width">
+          
+                 
+                </div>
+             
+    
+    
+                <div class="form-group">
+                    <label for="pric">pric</label>
+                    <input type="file" id="pric" name="pric" placeholder="pric" class="half-width">
+          
+                 
+                </div>
+             
+            </div>
+            
+    
+    
+    
+    
+    
+            <div class="product-images" id="productImages">
+                <h2>main color</h2>
+                
+    
+          
+    
+                </div>
+    
+    
+    
+    
+    
+            
+            <div class="form-actions">
+                <button type="submit" class="btn-add">Add</button>
+                <button type="submit" class="btn-add" style="background: red;">Close</button>
+                <button onclick="addImageUpload()">Add New Image Upload</button>
+    
+            </div>
+                </div>
+    
+             
+             
+                
+            </form>
+            
+        </div>
+    </body>
+    
+    
+    
+        
+        
+       
+       
+        
+        
+    <style>
+        .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 5vh;
+    }
+    
+    .RGP{
+        padding: 10px;
+        border-radius: 30px;
+    }
+    
+    .RGP_color{
+        margin: 10px 0;
+    
+    }
+    .color{
+        background: #eee;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    <style>
+    
+        /* input[type="file"]{
+            color: transparent;
+        } */
+                .product-images {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+                .image-upload {
+                    border: 2px dashed #ccc;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+                }
+                .image-upload img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                .image-upload .remove {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    background: red;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            </style>
+        <style>
+            .conte_ner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: #eee;
+    }
+        </style>
+        <script>
+            function loadImage(event, input) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                    const div = input.parentElement;
+                    const img = document.createElement('img');
+                    img.src = reader.result;
+                    div.innerHTML = '';
+                    div.appendChild(img);
+                    const removeBtn = document.createElement('button');
+                    removeBtn.textContent = 'Remove';
+                    removeBtn.classList.add('remove');
+                    removeBtn.onclick = function() {
+                        div.remove();
+                    }
+                    div.appendChild(removeBtn);
+                }
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        
+            function addImageUpload() {
+                const div = document.createElement('div');
+                div.classList.add('product-images');
+                div.innerHTML = `
+                <div class="color">
+    
+    <div class="flex RGP_color ">
+        <span>RGP </span>                <input type="text" class="RGP" name="" id="">
+    
+    </div>
+                    <div class="conte_ner">
+                        <div class="image-upload">
+                            <input type="file" accept="image/*" onchange="loadImage(event, this)">
+                            <span>Drop your images here, or select <b>click to browse</b></span>
+                        </div>
+                        <div class="image-upload">
+                            <input type="file" accept="image/*" onchange="loadImage(event, this)">
+                            <span>Drop your images here, or select <b>click to browse</b></span>
+                        </div>
+                        <div class="image-upload">
+                            <input type="file" accept="image/*" onchange="loadImage(event, this)">
+                            <span>Drop your images here, or select <b>click to browse</b></span>
+                        </div>
+                        <div class="image-upload">
+                            <input type="file" accept="image/*" onchange="loadImage(event, this)">
+                            <span>Drop your images here, or select <b>click to browse</b></span>
+                        </div>
+                    </div>
+        
+                </div>
+                `;
+                document.getElementById('productImages').appendChild(div);
+            }
+        </script>
+
+
+</div>
         
     </div>
 
@@ -847,7 +1428,12 @@
     </script>
 </body>
 
-
+<style>
+    .d-flex.flex-column.flex-lg-row.h-lg-full.bg-surface-secondary {
+    display: grid !important;
+    grid-template-columns: 1fr 4fr;
+}
+</style>
 
 
 </html>

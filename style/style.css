@@ -10615,7 +10615,6 @@ fieldset:disabled .btn {
         border-radius: 0;
         box-shadow: 0 0 0 0 transparent !important;
         display: block;
-        max-width: 270px;
         overflow-y: auto;
         transition: all .2s ease-in-out;
         width: 100%;
@@ -10721,7 +10720,6 @@ fieldset:disabled .btn {
         border-radius: 0;
         box-shadow: 0 0 0 0 transparent !important;
         display: block;
-        max-width: 270px;
         overflow-y: auto;
         transition: all .2s ease-in-out;
         width: 100%;
@@ -10827,7 +10825,6 @@ fieldset:disabled .btn {
         border-radius: 0;
         box-shadow: 0 0 0 0 transparent !important;
         display: block;
-        max-width: 270px;
         overflow-y: auto;
         transition: all .2s ease-in-out;
         width: 100%;
@@ -10865,7 +10862,6 @@ fieldset:disabled .btn {
 @media (min-width:992px) {
     .navbar-vertical.navbar-expand-lg.show {
         border-radius: 0;
-        max-width: 270px
     }
 
     .navbar-vertical.navbar-expand-lg.show.navbar-lg {
@@ -10882,10 +10878,7 @@ fieldset:disabled .btn {
         pointer-events: auto
     }
 
-    .navbar-vertical.navbar-expand-lg.show+.main-content {
-        margin-left: 270px
-    }
-
+ 
     .navbar-vertical.navbar-expand-lg.hide {
         max-width: 270px
     }
@@ -10933,7 +10926,6 @@ fieldset:disabled .btn {
         border-radius: 0;
         box-shadow: 0 0 0 0 transparent !important;
         display: block;
-        max-width: 270px;
         overflow-y: auto;
         transition: all .2s ease-in-out;
         width: 100%;
@@ -11039,7 +11031,6 @@ fieldset:disabled .btn {
         border-radius: 0;
         box-shadow: 0 0 0 0 transparent !important;
         display: block;
-        max-width: 270px;
         overflow-y: auto;
         transition: all .2s ease-in-out;
         width: 100%;
@@ -11144,7 +11135,6 @@ fieldset:disabled .btn {
     border-radius: 0;
     box-shadow: 0 0 0 0 transparent !important;
     display: block;
-    max-width: 270px;
     overflow-y: auto;
     transition: all .2s ease-in-out;
     width: 100%;
@@ -11551,7 +11541,6 @@ fieldset:disabled .btn {
     background-color: #fff;
     border: 0 solid #eceef3;
     border-radius: .75rem;
-    box-shadow: 0 3px 3px -1px rgba(10, 22, 70, .1), 0 0 1px 0 rgba(10, 22, 70, .06);
     display: flex;
     flex-direction: column;
     min-width: 0;

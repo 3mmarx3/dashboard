@@ -1,0 +1,136 @@
+
+.main_div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 85vh;
+    gap: 20px;
+}
+
+
+.titel {
+    padding: 20px;
+}
+
+.container,body {
+    background: #f5f9fc !important;
+}
+
+.d-flex.flex-column.flex-lg-row.h-lg-full.bg-surface-secondary {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr;
+}
+div#div2 {
+    margin-top: 5vh;
+}
+
+.main {
+    display: grid;
+    width: 300%;
+    overflow-y: auto;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.block_div input[type="url"] {
+    background: no-repeat;
+}
+
+
+.flex_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.block_div input[type="submit"] {
+    border-radius: 30px;
+    padding: 0 10px;
+    background: black;
+    color: white;
+}
+
+::-webkit-scrollbar{
+width: 0;
+}
+.contener {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+
+}
+
+
+
+
+
+.del_slide {
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+.img {
+    background: black;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+.img_slide {
+    background: black;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+}
+
+.linke {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.linke input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.sub input[type="submit"] {
+    background: black;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.but {
+    width: 20% !important;
+    padding: 15px !important;
+
+}
