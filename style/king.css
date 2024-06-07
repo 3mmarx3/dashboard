@@ -494,9 +494,7 @@ section.add.owl-carousel.owl-theme.owl-loaded.owl-drag{
 
 
 
-.card {
-  border-radius: 10px;
-}
+
 
 .cards .card .card_img {
 
@@ -973,6 +971,11 @@ ul.ST_ARS {
 .card_img {
     height: 30vh;
     background: #f5f9fc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .custom-field ,.form-field{
@@ -1687,3 +1690,40 @@ ul.ST_ARS {
     backface-visibility: hidden;
     overflow: hidden;
   }
+
+  .margin{
+    margin-bottom: 55vh;
+}
+
+.bg_img {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid #5c60f5;
+}
+
+.card {
+    border-radius: 10px;
+  
+    padding: 10px;
+  }
+
+
+  .flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+._colo_r button {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 30px;
+    background: #f5f9fc;
+}
+
+.divs{
+    display: none ;
+}
