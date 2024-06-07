@@ -44,22 +44,39 @@
                         <li class="nav-item"><a class='nav-link' href='#' onclick="showDiv('div1')"><i
                                     class="bi bi-bar-chart-fill"></i>
                                 Dashboard</a></li>
+
+                                <li class="nav-item"><a class='nav-link' onclick="showDiv('div8')" href='#'><i
+                                    class="bi bi-lock-fill"></i> catagoreis</a></li>
+
+
+                                    <li class="nav-item"><a onclick="showDiv('div6')" class='nav-link' href='#'><i
+                                        class="bi bi-gear-fill"></i>
+                                    Add Product</a></li>
+
+
+
+
+
+
+
                         <li class="nav-item"><a onclick="showDiv('div2')" class='nav-link' href='#'><i
                                     class="bi bi-person-circle"></i>
                                 Product</a></li>
+
+                                <li class="nav-item"><a onclick="showDiv('div5')" class='nav-link' href='#'><i
+                                    class="bi bi-hand-index"></i> 
+                                Advertisement</a></li>
+
 
 
 
 
                         <li class="nav-item"><a onclick="showDiv('div3')" class='nav-link' href='#'><i
-                                    class="bi bi-gear-fill"></i>
+                            class="bi bi-journals"></i>
                                 discount</a></li>
 
 
-                        <li class="nav-item"><a onclick="showDiv('div4')" class='nav-link' href='#'><i
-                                    class="bi bi-gear-fill"></i>
-                                order</a></li>
-
+                       
 
 
 
@@ -72,16 +89,14 @@
                                 class="nav-link text-xs font-semibold text-uppercase text-muted ls-wide">Resources</span>
                         </li>
 
-                        <li class="nav-item"><a onclick="showDiv('div5')" class='nav-link' href='#'><i
-                                    class="bi bi-gear-fill"></i>
-                                Advertisement</a></li>
+                      
 
 
-                        <li class="nav-item"><a onclick="showDiv('div6')" class='nav-link' href='#'><i
-                                    class="bi bi-gear-fill"></i>
-                                Add Product</a></li>
-                        <li class="nav-item"><a class='nav-link' onclick="showDiv('div8')" href='#'><i
-                                    class="bi bi-lock-fill"></i> catagoreis</a></li>
+                        <li class="nav-item"><a onclick="showDiv('div4')" class='nav-link' href='#'><i
+                            class="bi bi-mouse3"></i> 
+                        order</a></li>
+
+                
 
 
 
@@ -107,7 +122,7 @@
                     <div class="mb-npx">
                         <div class="row align-items-center">
                             <div class="col-sm-6 col-12 mb-4 mb-sm-0">
-                                <h1 class="h2 ls-tight"><span class="d-inline-block me-3">👋</span>Welcome!</h1>
+                                <h1 class="h2 ls-tight"><span class="d-inline-block me-3">👋</span>Welcome ! <span>Eng_Ammar</span></h1>
                             </div>
                             <div class="col-sm-6 col-12 text-sm-end">
                                 <div class="hstack gap-2 justify-content-end"><a
@@ -151,7 +166,7 @@
                                     <div class="row">
                                         <div class="col"><span
                                                 class="h6 font-semibold text-muted text-sm d-block mb-2">New
-                                                projects</span> <span class="h3 font-bold mb-0">215</span></div>
+                                                projects</span> <span class="h3 font-bold mb-0 number_" id="num">215</span></div>
                                         <div class="col-auto">
                                             <div class="icon icon-shape bg-primary text-white text-lg rounded-circle"><i
                                                     class="bi bi-people"></i></div>
@@ -170,7 +185,8 @@
                                     <div class="row">
                                         <div class="col"><span
                                                 class="h6 font-semibold text-muted text-sm d-block mb-2">Total
-                                                hours</span> <span class="h3 font-bold mb-0">1.400</span></div>
+                                                hours</span> <span id="minutes" class="h3 font-bold mb-0">0</span> <span class="h3 font-bold mb-0">.</span> <span id="seconds" class="h3 font-bold mb-0">0</span> 
+                                            </div>
                                         <div class="col-auto">
                                             <div class="icon icon-shape bg-info text-white text-lg rounded-circle"><i
                                                     class="bi bi-clock-history"></i></div>
@@ -395,7 +411,7 @@
                         </div>
 
                         <div class="table-responsive">
-                            <table class="table table-hover table-nowrap">
+                            <table class="table table-hover table-nowrap" id="table">
                                 <thead class="table-light">
                                     <tr>
                                         <th scope="col">Name</th>
@@ -627,7 +643,7 @@
 
                         <h2 class="section-title">Best selling products</h2>
 
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center gap-6">
                             <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
                             <div class="swiper-buttons">
                                 <button
@@ -699,15 +715,12 @@
 
                                 <span class="sile tr" style="display: block;"> 85 SAR</span>
 
-                                <button onclick="prod(this.id)" id="213" class="tr"> add to cart</button>
+                                <button onclick="prod(this.id)" id="213" class="Avaliable">Avaliable <span class="counter">11</span></button>
                             </div>
                             <div class="before">
-                                <svg class="heart" onclick="colorit(this.id)" id="213"
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
-                                    </path>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
+                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
                                 </svg>
 
                             </div>
@@ -1473,7 +1486,7 @@
 
                         <h2 class="section-title">Best selling products</h2>
 
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center gap-6">
                             <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
                             <div class="swiper-buttons">
                                 <button
@@ -1804,7 +1817,7 @@
                 <div class="form-actions">
                     <button type="submit" class="btn-add">Add</button>
                     <button type="submit" class="btn-add" style="background: red;">Close</button>
-                    <button onclick="addImageUpload()">Add New Image Upload</button>
+                    <button onclick="addImageUpload()" class="up_lo">Add New Image Upload</button>
 
                 </div>
         </div>
@@ -1829,6 +1842,7 @@
     .RGP {
         padding: 10px;
         border-radius: 30px;
+        border: 1px dashed #5c60f5;
     }
 
     .RGP_color {
@@ -1908,9 +1922,13 @@
         div.innerHTML = `
             <div class="color">
                 <div class="flex RGP_color ">
+                  <div class="__block">
                     <span>RGP </span>                
-                    <input type="text" class="RGP" name="" id="">
-                    <button class="remove" onclick="removeElement(this)">Remove Element</button>
+                    <input type="text" class="RGP" name="" id=""></div>
+                    <button class="remove" onclick="removeElement(this)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
+                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
+                                </svg></button>
                 </div>
                 <div class="conte_ner">
                     <div class="image-upload">
@@ -2012,6 +2030,45 @@
 
 </script>
 
+<script>
+    let table = document.getElementById('table');
+        let num =  document.getElementById('num');
+        let ceo = table.rows.length;
+        let me = ceo-1;
+        num.innerText = me;
+    </script>
+
+
+
+
+<script>
+    var minutes = 0;
+    var seconds = 0;
+    
+    // التحقق مما إذا كان هناك قيمة مخزنة مسبقًا للوقت
+    if(localStorage.getItem('sessionTime')) {
+        // استرجاع الوقت المخزن سابقًا
+        var storedTime = parseInt(localStorage.getItem('sessionTime'));
+        minutes = Math.floor(storedTime / 60);
+        seconds = storedTime % 60;
+        document.getElementById('minutes').innerText = minutes;
+        document.getElementById('seconds').innerText = seconds;
+    }
+    
+    // تحديث العداد كل ثانية
+    setInterval(function() {
+        seconds++;
+        if (seconds == 60) {
+            minutes++;
+            seconds = 0;
+        }
+        document.getElementById('minutes').innerText = minutes;
+        document.getElementById('seconds').innerText = seconds;
+    
+        // تخزين الوقت الحالي في مخزن الويب المحلي
+        localStorage.setItem('sessionTime', minutes * 60 + seconds);
+    }, 1000);
+    </script>
 
 
 
@@ -2034,24 +2091,10 @@
     }
 </style>
 
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-<script src="/dashboard/app/plugins.js"></script>
-<script src="/dashboard/app/script.js"></script>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
+
+
+
+
 <style>
     .king {
         display: grid !important;
@@ -2060,5 +2103,7 @@
         justify-content: center;
     }
 </style>
+
+
 
 </html>
