@@ -59592,3 +59592,9 @@ url("./fonts/bootstrap-icons.woff?30af91bf14e37666a085fb8a161ff36d") format("wof
 .bi-mortarboard::before { content: "\f6fe"; }
 .bi-terminal-x::before { content: "\f6ff"; }
 
+
+input.file {
+    width: 100 !important;
+    background: none;
+    border: none;
+}
