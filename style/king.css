@@ -604,6 +604,7 @@ fieldset {
 .flex,
 .fixed_flex {
   display: flex;
+  background: white;
 }
 
 .flex-content {
@@ -1691,7 +1692,7 @@ ul.ST_ARS {
   }
 
   .margin{
-    margin-bottom: 55vh;
+    margin-top: 5vh;
 }
 
 .bg_img {
@@ -1717,7 +1718,7 @@ ul.ST_ARS {
 }
 
 ._colo_r button {
-    padding: 10px;
+    padding:5px 10px;
     margin: 0 10px;
     border-radius: 30px;
     background: #f5f9fc;

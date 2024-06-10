@@ -1,4 +1,16 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+}
+
+
+
+
+
 .main_div {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -150,7 +162,5 @@ div#sidebarCollapse {
     position: fixed;
 }
 
-div#div2 {
-    background: #f5f9fc !important;
-}
+
 

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/dashboard/style/main.css">
     <link rel="stylesheet" href="/dashboard/style/king.css">
 </head>
-<body>
+<body >
     <div class="profile">
         <div class="container-fluid ">
             <div class="vstack gap-6">
@@ -32,10 +32,10 @@
                             <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3"><a href="#" class="btn btn-sm btn-neutral d-block d-md-inline-block">Follow</a></div>
                         </div>
                         <ul class="nav nav-pills overflow-x ms-1 mt-5">
-                            <li class="nav-item"><a href="#!" class="nav-link active font-bold">Overview</a>
+                            <li class="nav-item"><a href="#!" class="nav-link active font-bold" onclick="showDiv('div1')" >profile</a>
                             </li>
-                            <li class="nav-item"><a href="#" onclick="showDiv('div1')"  class="nav-link">Projects</a></li>
-                            <li class="nav-item"><a href="#" onclick="showDiv('div3')"  class="nav-link">Members</a></li>
+
+                            <li class="nav-item"><a href="#" onclick="showDiv('div3')"  class="nav-link">order</a></li>
                             <li class="nav-item"><a href="#" onclick="showDiv('div2')"  class="nav-link">Settings</a></li>
 
                      
@@ -48,7 +48,7 @@
 
 
 
-                <div class="card content mb-5 " id="div1">
+                <div class="card content mb-5  _block_div " id="div1">
                     <div class="card-body p-10 ">
                         <h5 class="mb-3">Biography</h5>
                         <p class="text-sm lh-relaxed mb-4">Personal profiles are the perfect way for you to grab
@@ -135,7 +135,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a>
+                                            <td class="text-end"><a href="/dashboard/pags/order.html" class="btn btn-sm btn-neutral">View</a>
                                                 <a href="/dashboard/pags/Profile.html"><button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-person-circle"></i></button></a>
         
                                                             <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
@@ -162,7 +162,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a>
+                                            <td class="text-end"><a href="/dashboard/pags/order.html" class="btn btn-sm btn-neutral">View</a>
                                                 <a href="/dashboard/pags/Profile.html"><button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-person-circle"></i></button></a>
         
                                                             <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
@@ -187,7 +187,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a>
+                                            <td class="text-end"><a href="/dashboard/pags/order.html" class="btn btn-sm btn-neutral">View</a>
                                                 <a href="/dashboard/pags/Profile.html"><button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-person-circle"></i></button></a>
         
                                                             <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
@@ -212,7 +212,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a>
+                                            <td class="text-end"><a href="/dashboard/pags/order.html" class="btn btn-sm btn-neutral">View</a>
                                                 <a href="/dashboard/pags/Profile.html"><button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-person-circle"></i></button></a>
         
                                                             <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
@@ -238,7 +238,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a>
+                                            <td class="text-end"><a href="/dashboard/pags/order.html" class="btn btn-sm btn-neutral">View</a>
                                                 <a href="/dashboard/pags/Profile.html"><button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-person-circle"></i></button></a>
         
                                                             <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
@@ -320,11 +320,8 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-end"><a href="/x.html" class="btn btn-sm btn-neutral">View</a>
-                                                <a href="/dashboard/pags/Profile.html"><button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-person-circle"></i></button></a>
-                                                <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button>
-        
-                                            </td>
+                                            <td class="text-end"><a href="#" class="btn btn-sm btn-neutral">View</a> <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover"><i class="bi bi-trash"></i></button></td>
+
                                         </tr>
         
                                     </tbody>
@@ -428,57 +425,11 @@
 
 
 
-    <style>
-        .content {
-            display: none;
-        }
-    </style>
-    <script>
-
-window.onload = function (){
-    var divs = document.getElementsByClassName('content');
-divs[0].style.display = 'block';};
+    <script src="/dashboard/app/script.js"></script>
 
 
 
-        function showDiv(divId) {
-            // Hide all divs
-            var divs = document.getElementsByClassName('content');
-            for (var i = 0; i < divs.length; i++) {
-                divs[i].style.display = 'none';
-            }
-            // Show the selected div
-            document.getElementById(divId).style.display = 'block';
-        }
 
 
-        
-
-    </script>
-
-
-<style>
-    .divs{
-    display: none ;
-}
-</style>
-<script>
-
-    window.onload = function () {
-        var elements = document.getElementsByClassName('divs');
-        elements[0].style.display = 'block';
-    };
-
-    function changeElement(elementId) {
-        // Hide all elements
-        var elements = document.getElementsByClassName('divs');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].style.display = 'none';
-        }
-        // Show the selected element
-        document.getElementById(elementId).style.display = 'block';
-    }
-
-</script>
 </body>
 </html>
